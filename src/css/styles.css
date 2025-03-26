@@ -11,8 +11,86 @@
 @import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+/*=============================first task=============================*/
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  /* Відстань між блоками днів, годин, хвилин, секунд */
+  margin-top: 32px;
+  /* Відстань до вибору дати */
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  width: auto;
+  height: auto;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  width: 75px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  margin-top: 8px;
+  /* Відстань між кнопкою та полем вибору дати */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.btn:disabled {
+  background: #e0e0e0;
+  /* Стиль для неактивної кнопки */
+  cursor: not-allowed;
+}
+#datetime-picker {
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  background: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+  padding: 8px;
+  border: 1px solid #ccc;
+  /* Або будь-який інший колір для межі */
+  box-sizing: border-box;
+  /* Для коректного розрахунку розмірів */
+}
+
+#datetime-picker:focus {
+  outline: none;
+  border-color: #2e2f42;
+  /* Підсвітка рамки при фокусі */
+  box-shadow: 0 0 5px rgba(46, 47, 66, 0.5);
+}
