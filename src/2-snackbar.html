@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SNACKBAR</title>
     <link rel="stylesheet" href="./css/styles.css" />
-
   </head>
   <body>
     <main>
       <div class="container">
         <h1 class="main-title">SNACKBAR</h1>
         <a class="back-link" href="./index.html">Go back</a>
-
+<form class="form notification-form">
+  <label class="leybal">
+    Delay (ms)
+    <input type="number" class="del" name="delay" required />
+  </label>
+  <fieldset class="field">
+    <legend class="leg">State</legend>
+    <label>
+      <input type="radio" name="state" value="fulfilled" required />
+      Fulfilled
+    </label>
+    <label>
+      <input type="radio" name="state" value="rejected" required />
+      Rejected
+    </label>
+  </fieldset>
+  <button type="submit">Create notification</button>
+</form>
       </div>
     </main>
     <script type="module" src="./js/2-snackbar.js"></script>
